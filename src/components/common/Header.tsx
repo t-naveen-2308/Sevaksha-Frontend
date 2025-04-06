@@ -3,11 +3,7 @@ import sevakshaLogo from "../../assets/Logo.png";
 import { useState, useEffect, FormEvent } from "react";
 import createAxios from "../../utils/createAxios";
 
-interface Props {
-    setTheme: React.Dispatch<React.SetStateAction<string>>;
-}
-
-function Header({setTheme}: Props) {
+function Header() {
     const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [searchFocused, setSearchFocused] = useState(false);

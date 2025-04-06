@@ -1,17 +1,13 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
-import { useEffect, useState, FormEvent } from "react";
+import { useEffect, useState } from "react";
 
-interface Props {
-    setTheme: React.Dispatch<React.SetStateAction<string>>;
-}
 
-function UserHeader({ setTheme }: Props) {
-    const location = useLocation();
+function UserHeader() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [searchFocused, setSearchFocused] = useState(false);
     const [themeLis, setThemeLis] = useState<[string, string]>(["", ""]);
-
+    console.log(themeLis);
     // Sevaksha color theme
     const navyBlue = "#1e2761";
     const orange = "#f8991d";

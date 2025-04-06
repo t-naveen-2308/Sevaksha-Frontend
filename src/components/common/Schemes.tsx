@@ -30,6 +30,7 @@ const Schemes: React.FC = () => {
 
         fetchSchemes();
     }, []);
+    setSearchTerm('');
 
     const filteredSchemes = schemes.filter(
         (scheme) =>
