@@ -1,11 +1,8 @@
-import { ToastContainer, toast } from "react-toastify";
-import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import { useState } from "react";
 import BrowserRouterProvider from "./BrowserRouterProvider";
 
 function App() {
-    const [currentToastId, setCurrentToastId] = useState<
-        string | number | null
-    >(null);
 
     const [toastStyle, setToastStyle] = useState<{
         backgroundColor: string;
@@ -13,6 +10,7 @@ function App() {
     }>(
         { backgroundColor: "#ffffff", color: "#1f2937" }
     );
+    setToastStyle({ backgroundColor: "#ffffff", color: "#1f2937" });;
     
 
     return (

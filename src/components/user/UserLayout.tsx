@@ -2,15 +2,12 @@ import { Outlet } from "react-router-dom";
 import UserHeader from "./UserHeader";
 import UserFooter from "./UserFooter";
 
-interface Props {
-    setTheme: React.Dispatch<React.SetStateAction<string>>;
-}
 
-function UserLayout({ setTheme }: Props) {
+function UserLayout() {
     return (
         <>
             <header>
-                <UserHeader setTheme={setTheme} />
+                <UserHeader />
             </header>
             <div className="mt-12" style={{ minHeight: "60vh" }}>
                 <Outlet />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
     Container,
     Grid,
@@ -10,7 +10,7 @@ import createAxios from "../../utils/createAxios";
 import SchemeCard from "./SchemeCard";
 import { Scheme } from "../../types/scheme";
 
-const Schemes: React.FC = () => {
+function Schemes() {
     const [schemes, setSchemes] = useState<Scheme[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [searchTerm, setSearchTerm] = useState("");

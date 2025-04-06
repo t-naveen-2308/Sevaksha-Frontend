@@ -1,10 +1,9 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import sevakshaLogo from "../../assets/Logo.png";
 import { useState, useEffect, FormEvent } from "react";
 import createAxios from "../../utils/createAxios";
 
 function Header() {
-    const location = useLocation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [searchFocused, setSearchFocused] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
